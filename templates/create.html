@@ -1,0 +1,15 @@
+{% extends "blank.html"%}
+
+
+
+{%block content%}
+<h1>Create</h1>
+<form method="post" enctype="multipart/form-data">
+    {%csrf_token%}
+    name:<input type="text" name="name">
+    age:<input type="text" name="age">
+    place:<input type="text" name="place">
+    <button>submit</button>
+    
+</form>
+{%endblock%}
